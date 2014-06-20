@@ -1,0 +1,47 @@
+body{
+  background-color: #000;
+}
+canvas{
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  z-index: -10;
+}
+audio{
+  position: absolute;
+}
+
+.bound{
+  position: relative;
+  height: 96px;
+  width: 60%; 
+  top:200px;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 10;
+  display: block;
+
+  /*overflow: hidden;*/
+-webkit-mask: -webkit-radial-gradient(center, closest-side, black 0%, transparent 100%);
+}
+
+.wrapper{
+  position: relative;
+  top:36px;
+z-index: 9;
+}
+.wrapper > p{
+  margin:0 auto;
+  font-size:24px;
+  line-height: 36px；
+  position: relative;
+  padding:0;
+  text-align: center;
+  margin: 0;
+  color: rgba(255,255,255,1);
+  z-index: 5;
+}
+
+@-webkit-keyframes line{
+  0%  {top: 0px;}
+}
