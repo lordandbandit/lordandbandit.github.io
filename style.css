@@ -1,5 +1,5 @@
 body{
-  background-color: #000;
+  background: -webkit-linear-gradient(top, rgba(40,52,59,1) 0%,rgba(130,140,149,1) 36%,rgba(181,189,200,1) 100%);
 }
 canvas{
   position: absolute;

@@ -84,7 +84,7 @@ void setup()
 {
   size(window.innerWidth,window.innerHeight,P3D);
   colorMode(HSB,100);
-  background(0);
+  background(0,0,0,0);
  
   rain.add(new Rain());
   current = millis();
