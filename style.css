@@ -1,5 +1,5 @@
 body{
-  background: -webkit-linear-gradient(top, rgba(40,52,59,1) 0%,rgba(130,140,149,1) 36%,rgba(181,189,200,1) 100%);
+  background-color: white;
 }
 canvas{
   position: absolute;
@@ -13,23 +13,22 @@ audio{
 
 .bound{
   position: relative;
-  height: 100px;
-  width: 80%; 
-  top:200px;
+  height: 200px;
+  width: 100%; 
+  top:100px;
   margin-left:auto;
   margin-right: auto;
   z-index: 10;
   display: block;
-
+ background-color: white;
   overflow: hidden;
--webkit-mask: -webkit-radial-gradient(center, closest-side, black 0%, transparent 100%);
+-webkit-mask: -webkit-radial-gradient(center, closest-side, white 30%, transparent 100%);
 }
 
 .wrapper{
   position: relative;
-  top:36px;
 z-index: 9;
-padding-top: 36px;
+padding-top: 100px;
 /*overflow: scroll;*/
 -webkit-animation: line 400s;
 -webkit-animation-fill-mode:forwards;
@@ -37,9 +36,9 @@ padding-top: 36px;
 .wrapper > p{
   margin:0 auto;
   font-size:24px;
-  line-height: 36px;
+  line-height: 72px;
   position: relative;
-  padding:0;
+  padding-top:50px;
   text-align: center;
   margin: 0;
   color: rgba(255,255,255,1);
@@ -50,205 +49,63 @@ padding-top: 36px;
   display: none;
 }
 @-webkit-keyframes line{
-  0.00%{top: 0px;}
-  0.10%{top: 0px;}
-  1.00%{top: 0px;}  
-  1.10%{top: -0px;}
-  1.90%{top: -0px;}
-  2.10%{top: -72px;}
-  3.00%{top: -72px;}
-  3.10%{top: -108px;}
-  4.00%{top: -108px;}
-  4.10%{top: -144px;}
-  5.00%{top: -144px;}
-  5.10%{top: -180px;}
-  6.00%{top: -180px;}  
-  6.10%{top: -216px;}
-  7.00%{top: -216px;}
-  7.10%{top: -252px;}
-  8.00%{top: -252px;}
-  8.10%{top: -288px;}
-  9.00%{top: -288px;}
-  9.10%{top: -324px;}
-  10.00%{top: -324px;}
-  10.10%{top: -360px;}
-  11.00%{top: -360px;}
-  11.10%{top: -396px;}
-  12.00%{top: -396px;}  
-  12.10%{top: -432px;}
-  13.00%{top: -432px;}
-  13.10%{top: -468px;}
-  14.00%{top: -468px;}
-  14.10%{top: -504px;}
-  15.00%{top: -504px;}
-  15.10%{top: -540px;}
-  16.00%{top: -540px;}
-  16.10%{top: -576px;}
-  17.00%{top: -576px;}  
-  17.10%{top: -612px;}
-  18.00%{top: -612px;}
-  18.10%{top: -648px;}
-  19.00%{top: -648px;}
-  19.10%{top: -684px;}
-  20.00%{top: -684px;}
-  20.10%{top: -720px;}
-  21.00%{top: -720px;}
-  21.10%{top: -756px;}
-  22.00%{top: -756px;}
-  22.10%{top: -792px;}
-  23.00%{top: -792px;}
-  23.10%{top: -828px;}
-  24.00%{top: -828px;}
-  24.10%{top: -864px;}
-  25.00%{top: -864px;}
-  25.10%{top: -900px;}
-  26.00%{top: -900px;}
-  26.10%{top: -936px;}
-  27.00%{top: -936px;}  
-  27.10%{top: -972px;}
-  28.00%{top: -972px;}
-  28.10%{top: -1008px;}
-  29.00%{top: -1008px;}
-  29.10%{top: -1044px;}
-  30.00%{top: -1044px;}
-  30.10%{top: -1080px;}
-  31.00%{top: -1080px;}
-  31.10%{top: -1116px;}
-  32.00%{top: -1116px;}
-  32.10%{top: -1152px;}
-  33.00%{top: -1152px;}
-  33.10%{top: -1188px;}
-  34.00%{top: -1188px;}
-  34.10%{top: -1224px;}
-  35.00%{top: -1224px;}
-  35.10%{top: -1260px;}
-  36.00%{top: -1260px;}
-  36.10%{top: -1296px;}
-  37.00%{top: -1296px;}
-  37.10%{top: -1332px;}
-  38.00%{top: -1332px;}
-  38.10%{top: -1368px;}
-  39.00%{top: -1368px;}
-  39.10%{top: -1404px;}
-  40.00%{top: -1404px;}
-  40.10%{top: -1440px;}
-  41.00%{top: -1440px;}
-  41.10%{top: -1476px;}
-  42.00%{top: -1476px;}
-  42.10%{top: -1512px;}
-  43.00%{top: -1512px;}
-  43.10%{top: -1548px;}
-  44.00%{top: -1548px;}
-  44.10%{top: -1584px;}
-  45.00%{top: -1584px;}
-  45.10%{top: -1620px;}
-  46.00%{top: -1620px;}
-  46.10%{top: -1656px;}
-  47.00%{top: -1656px;}
-  47.10%{top: -1692px;}
-  48.00%{top: -1692px;}
-  48.10%{top: -1728px;}
-  49.00%{top: -1728px;}
-  49.10%{top: -1764px;}
-  50.00%{top: -1764px;}
-  50.10%{top: -1800px;}
-  51.00%{top: -1800px;}
-  51.10%{top: -1836px;}
-  52.00%{top: -1836px;}
-  52.10%{top: -1872px;}
-  53.00%{top: -1872px;}
-  53.10%{top: -1908px;}
-  54.00%{top: -1908px;}
-  54.10%{top: -1944px;}
-  55.00%{top: -1944px;}
-  55.10%{top: -1980px;}
-  56.00%{top: -1980px;}
-  56.10%{top: -2016px;}
-  57.00%{top: -2016px;}
-  57.10%{top: -2052px;}
-  58.00%{top: -2052px;}
-  58.10%{top: -2088px;}
-  59.00%{top: -2088px;}
-  59.10%{top: -2124px;}
-  60.00%{top: -2124px;}
-  60.10%{top: -2160px;}
-  61.00%{top: -2160px;}
-  61.10%{top: -2196px;}
-  62.00%{top: -2196px;}
-  62.10%{top: -2232px;}
-  63.00%{top: -2232px;}
-  63.10%{top: -2268px;}
-  64.00%{top: -2268px;}
-  64.10%{top: -2304px;}
-  65.00%{top: -2304px;}
-  65.10%{top: -2340px;}
-  66.00%{top: -2340px;}
-  66.10%{top: -2376px;}
-  67.00%{top: -2376px;}
-  67.10%{top: -2412px;}
-  68.00%{top: -2412px;}
-  68.10%{top: -2448px;}
-  69.00%{top: -2448px;}
-  69.10%{top: -2484px;}
-  70.00%{top: -2484px;}
-  70.10%{top: -2520px;}
-  71.00%{top: -2520px;}
-  71.10%{top: -2556px;}
-  72.00%{top: -2556px;}
-  72.10%{top: -2592px;}
-  73.00%{top: -2592px;}
-  73.10%{top: -2628px;}
-  74.00%{top: -2628px;}
-  74.10%{top: -2664px;}
-  75.00%{top: -2664px;}
-  75.10%{top: -2700px;}
-  76.00%{top: -2700px;}
-  76.10%{top: -2736px;}
-  77.00%{top: -2736px;}
-  77.10%{top: -2772px;}
-  78.00%{top: -2772px;}
-  78.10%{top: -2808px;}
-  79.00%{top: -2808px;}
-  79.10%{top: -2844px;}
-  80.00%{top: -2844px;}
-  80.10%{top: -2880px;}
-  81.00%{top: -2880px;}
-  81.10%{top: -2916px;}
-  82.00%{top: -2916px;}
-  82.10%{top: -2952px;}
-  83.00%{top: -2952px;}
-  83.10%{top: -2988px;}
-  84.00%{top: -2988px;}
-  84.10%{top: -3024px;}
-  85.00%{top: -3024px;}
-  85.10%{top: -3060px;}
-  86.00%{top: -3060px;}
-  86.10%{top: -3096px;}
-  87.00%{top: -3096px;}
-  87.10%{top: -3132px;}
-  88.00%{top: -3132px;}
-  88.10%{top: -3168px;}                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
-  89.00%{top: -3204px;}  
-  89.10%{top: -3204px;}      
-  90.00%{top: -3240px;}  
-  90.10%{top: -3240px;}      
-  91.00%{top: -3276px;}  
-  91.10%{top: -3276px;}      
-  92.00%{top: -3312px;}  
-  92.10%{top: -3312px;}      
-  93.00%{top: -3348px;}  
-  93.10%{top: -3348px;}      
-  94.00%{top: -3384px;}  
-  94.10%{top: -3384px;}      
-  95.00%{top: -3420px;}  
-  95.10%{top: -3420px;}      
-  96.00%{top: -3456px;}  
-  96.10%{top: -3456px;}      
-  97.00%{top: -3492px;}  
-  97.10%{top: -3492px;}      
-  98.00%{top: -3528px;} 
-  98.10%{top: -3528px;}
-  99.00%{top: -3564px;}
-  99.10%{top: -3564px;}
-  100.00%{top: -3600px;}  
+  0.00%{top: -95px;}
+  0.10%{top: -95px;}
+  1.00%{top: -95px;}  
+  1.10%{top: -95px;}
+  1.90%{top: -95px;}
+  2.00%{top: -95px;}
+  2.10%{top: -250px;}
+  3.00%{top: -250px;}
+  3.10%{top: -420px;}
+  4.00%{top: -420px;}
+  4.10%{top: -630px;}
+  5.00%{top: -630px;}
+  5.10%{top: -800px;}
+  6.00%{top: -800px;}  
+  6.10%{top: -980px;}
+  7.00%{top: -980px;}
+  7.10%{top: -980px;}
+  8.00%{top: -980px;}
+  18.10%{top: -1500px;}
+  19.00%{top: -1500px;}
+  100%{top:-1500px;}
+}
+
+.boundimage{
+  position: relative;
+  width: 100%; 
+  height:400px;
+  top:100px;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 10;
+  display: block;
+  overflow: hidden;
+/*-webkit-mask: -webkit-radial-gradient(center, closest-side, white 30%, transparent 100%);*/
+}
+
+.image{
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    z-index: 9;
+padding-top: 100px;
+/*overflow: scroll;*/
+-webkit-animation: image 400s;
+-webkit-animation-fill-mode:forwards;
+}
+
+.image > p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@-webkit-keyframes image{
+  0.00%{top: -95px;}
+  7.00%{top: -95px;}
+  7.001%{top: -500px;}
+  8.00%{top: -500px;}
+  100%{top:-500px;}
 }

@@ -13,7 +13,7 @@ public class Rain
    
   void draw()
   {
-    stroke(100,col);
+    stroke(0,col);
     strokeWeight(2);
     line(position.x,position.y,pposition.x,pposition.y);
     //ellipse(position.x,position.y,5,5);
@@ -52,7 +52,7 @@ public class Splash
   public void draw()
   {
     strokeWeight(1);
-    stroke(100,50);
+    stroke(0,50);
     fill(100,100);
     ellipse(position.x,position.y,2,2);
   }
@@ -136,7 +136,7 @@ void draw()
 void blur(float trans)
 {
   noStroke();
-  fill(0,trans);
+  fill(100,trans);
   rect(0,0,width,height);
 }
 
