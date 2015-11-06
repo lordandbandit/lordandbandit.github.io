@@ -1,0 +1,13 @@
+body{
+  background-color: white;
+}
+canvas{
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  z-index: -10;
+}
+audio{
+  position: absolute;
+}
+
