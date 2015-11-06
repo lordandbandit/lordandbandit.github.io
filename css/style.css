@@ -1,0 +1,111 @@
+body{
+  background-color: white;
+}
+canvas{
+  position: absolute;
+  width: 98%;
+  height: 98%;
+  z-index: -10;
+}
+audio{
+  position: absolute;
+}
+
+.bound{
+  position: relative;
+  height: 200px;
+  width: 100%; 
+  top:100px;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 10;
+  display: block;
+ background-color: white;
+  overflow: hidden;
+-webkit-mask: -webkit-radial-gradient(center, closest-side, white 30%, transparent 100%);
+}
+
+.wrapper{
+  position: relative;
+z-index: 9;
+padding-top: 100px;
+/*overflow: scroll;*/
+-webkit-animation: line 400s;
+-webkit-animation-fill-mode:forwards;
+}
+.wrapper > p{
+  margin:0 auto;
+  font-size:24px;
+  line-height: 72px;
+  position: relative;
+  padding-top:50px;
+  text-align: center;
+  margin: 0;
+  color: rgba(255,255,255,1);
+  z-index: 5;
+}
+
+.hide{
+  display: none;
+}
+@-webkit-keyframes line{
+  0.00%{top: -95px;}
+  0.10%{top: -95px;}
+  1.00%{top: -95px;}  
+  1.10%{top: -95px;}
+  1.90%{top: -95px;}
+  2.00%{top: -95px;}
+  2.10%{top: -250px;}
+  3.00%{top: -250px;}
+  3.10%{top: -420px;}
+  4.00%{top: -420px;}
+  4.10%{top: -630px;}
+  5.00%{top: -630px;}
+  5.10%{top: -800px;}
+  6.00%{top: -800px;}  
+  6.10%{top: -980px;}
+  7.00%{top: -980px;}
+  7.10%{top: -980px;}
+  8.00%{top: -980px;}
+  18.10%{top: -1500px;}
+  19.00%{top: -1500px;}
+  100%{top:-1500px;}
+}
+
+.boundimage{
+  position: relative;
+  width: 100%; 
+  height:400px;
+  top:100px;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 10;
+  display: block;
+  overflow: hidden;
+/*-webkit-mask: -webkit-radial-gradient(center, closest-side, white 30%, transparent 100%);*/
+}
+
+.image{
+  position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:300px;
+    z-index: 9;
+padding-top: 100px;
+/*overflow: scroll;*/
+-webkit-animation: image 400s;
+-webkit-animation-fill-mode:forwards;
+}
+
+.image > p{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@-webkit-keyframes image{
+  0.00%{top: -95px;}
+  7.00%{top: -95px;}
+  7.001%{top: -500px;}
+  8.00%{top: -500px;}
+  100%{top:-500px;}
+}
