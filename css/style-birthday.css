@@ -10,4 +10,24 @@ canvas{
 audio{
   position: absolute;
 }
+.bound{
+  position: relative;
+  height: 200px;
+  width: 100%; 
+  top:100px;
+  margin-left:auto;
+  margin-right: auto;
+  z-index: 10;
+  display: block;
+ background-color: white;
+  overflow: hidden;
+}
 
+.wrapper > p{
+  margin:0 auto;
+  font-size:24px;
+  line-height: 72px;
+  position: relative;
+  padding-top:50px;
+  text-align: center;
+}
